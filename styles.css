@@ -1,0 +1,318 @@
+/* 
+cyan
+#007d7b
+
+black
+#000000
+
+white
+#ffffff
+
+*/
+
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 1.25em;
+    margin-left: 10px;
+}
+
+figcaption,
+label,
+input,
+small {
+    font-size: 1em;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 485px) {
+
+    nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .contact,
+    form {
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding-left:5px;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+
+    label {
+        float: left;
+        margin-left: 30px;
+    }
+
+
+    input {
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    ::placeholder {
+        color: #007d7b;
+    }
+
+    input[value="SUBMIT"] {
+        background-color: #007d7b;
+        border: 0;
+        width: 200px;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+
+    .fullname .email .message {
+        text-align: left;
+    }
+
+    .photographs {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    dl {
+        position: relative;
+    }
+
+    dt {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    dd {
+        position: absolute;
+        display: block;
+        bottom: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 880px) {
+    nav {
+        text-align: center;
+    }
+
+    nav li:hover {
+        background-color: #007d7b;
+    }
+    
+    .photographs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin: 5px;
+    }
+
+
+    dt {
+        width: 100%;
+        margin: 0;
+    }
+
+    dl:nth-child(3) {
+        display: block;
+        position: relative;
+        margin-bottom: 365px;
+    }
+
+
+    dd {
+        width: 100%;
+        margin: 0;
+    }
+
+    label {
+        float: left;
+        margin-left: 135px;
+    }
+
+
+    input {
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    ::placeholder {
+        color: #007d7b;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    input[value="SUBMIT"] {
+        background-color: #007d7b;
+        border: 0;
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        color: #ffffff;
+        margin-top: 30px;
+
+    }
+
+    .fullname .email .message {
+        text-align: left;
+    }
+
+    .contact h2 {
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    nav {
+        text-align: right;
+    }
+
+    .photographs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        margin: 5px;
+    }
+
+    dl:nth-child(3) {
+        margin: auto;
+    }
+
+    label {
+        float: left;
+        margin-left: 120px;
+    }
+
+
+    input {
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    ::placeholder {
+        color: #007d7b;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    input[value="SUBMIT"] {
+        background-color: #007d7b;
+        border: 0;
+        width: 800px;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        color: #ffffff;
+        margin: 0;
+        padding: 7px;
+        margin-top: 30px;
+    }
+
+    .fullname .email .message {
+        text-align: left;
+    }
+}
